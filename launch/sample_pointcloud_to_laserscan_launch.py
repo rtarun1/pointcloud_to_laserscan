@@ -12,10 +12,10 @@ def generate_launch_description():
             # remappings=[('cloud_in', '/livox/lidar'),
             #             ('scan', '/livox/scan')],
             parameters=[{
-                'target_frame': 'laser_frame',
+                'target_frame': 'livox_frame',
                 'transform_tolerance': 0.01,
-                'min_height': 0.1, #0
-                'max_height': 2.0, #1
+                'min_height': 0.0, #0
+                'max_height': 1.3, #1
                 'angle_min': -3.14, # -M_PI/ 2-1.5708
                 'angle_max': 3.14, # M_PI/2
                 'angle_increment': 0.0087, # M_PI/360.0
